@@ -16,8 +16,8 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.copyAndPaste",
-                "title": "extension.copyAndPaste"
+                "command": "extension.copyAsCodeBlock",
+                "title": "Copy as code block"
             }
         ]
     },
