@@ -1,3 +1,4 @@
+import path = require('path');
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -6,10 +7,18 @@ export function activate(context: vscode.ExtensionContext) {
         if (!editor) {
             return;
         }
-        const file_name = editor?.document?.fileName || "";
+        const fullPath = editor.document.uri.fsPath;
+        let relativePath = fullPath;
+
+        // Check if there's an open workspace
+        if (vscode.workspace.workspaceFolders?.length) {
+            const workspaceRoot = vscode.workspace.workspaceFolders[0].uri.fsPath;
+            relativePath = path.relative(workspaceRoot, fullPath);
+        }
+
         const selection = editor.selection;
         const selectedText = editor.document.getText(selection);
-        const text = "```" + file_name + "\n" + selectedText + "\n```";
+        const text = "```" + relativePath + "\n" + selectedText + "\n```";
         console.log(text);
         // copy to clipboard
         vscode.env.clipboard.writeText(text);
