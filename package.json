@@ -1,13 +1,13 @@
 {
-    "name": "helloworld",
-    "displayName": "helloworld",
-    "description": "",
+    "name": "Copy as code block",
+    "displayName": "Copy as code block",
+    "description": "This is an extension for copying code with a filename in a code block when creating a prompt.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.74.0"
     },
     "publisher": "vscode-samples",
-    "repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+    "repository": "",
     "categories": [
         "Other"
     ],
@@ -18,6 +18,14 @@
             {
                 "command": "extension.copyAsCodeBlock",
                 "title": "Copy as code block"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.copyAsCodeBlock",
+                "key": "cmd+c cmd+c",
+                "mac": "cmd+c cmd+c",
+                "when": "editorTextFocus && !editorReadonly"
             }
         ]
     },
