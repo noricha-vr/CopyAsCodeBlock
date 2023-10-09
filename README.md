@@ -1,5 +1,42 @@
 # Copy as Code Block for VSCode
 
+This VSCode extension allows you to copy selected text in the editor as a code block to the clipboard.
+
+The selected text is wrapped in a code block with a relative path to the file within the workspace.
+
+It's useful for creating prompts for AI generation, making it convenient to paste code blocks.
+
+## Main Features
+
+- Retrieve selected text from the editor.
+- Wrap the text in a code block with a relative path to its file within the workspace.
+- Copy the wrapped text to the clipboard.
+
+## Installation
+
+1. Open Visual Studio Code.
+2. Open the Extensions view.
+3. Search for "Copy as Code Block" and install.
+4. Reload to activate the extension.
+
+## How to Use
+
+1. Select text in the editor.
+2. Press ⌘+C (or Ctrl+C) twice in succession.
+3. Paste anywhere, and the selected text will be pasted as a code block.
+
+## Example
+
+1. Press ⌘+C (or Ctrl+C) twice in succession to copy to the clipboard.
+
+2. When you paste the copied text, it will appear as follows:
+
+```````
+```src/sample.ts
+console.log("Hello World!");
+```
+```````
+
 このVSCode拡張機能は、エディタで選択したテキストをコードブロックとしてクリップボードにコピーするためのものです。
 
 選択したテキストは、ワークスペース内のファイルの相対パスを持つコードブロックでラップされます。
