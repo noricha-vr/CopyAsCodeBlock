@@ -1,8 +1,8 @@
 {
     "name": "copyAsCodeBlock",
-    "displayName": "Copy as code block",
+    "displayName": "Copy as Code Block",
     "description": "This is an extension for copying code with a filename in a code block when creating a prompt.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.74.0"
     },
