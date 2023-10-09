@@ -1,13 +1,13 @@
 {
-    "name": "Copy as code block",
+    "name": "copyAsCodeBlock",
     "displayName": "Copy as code block",
     "description": "This is an extension for copying code with a filename in a code block when creating a prompt.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.74.0"
     },
-    "icon": "images/icon.png",
-    "publisher": "noricha",
+    "icon": "image/icon.png",
+    "publisher": "Noricha",
     "repository": "https://github.com/noricha-vr/CopyAsCodeBlock",
     "categories": [
         "Other"
@@ -39,15 +39,15 @@
         "test": "node ./out/test/runTest.js"
     },
     "devDependencies": {
-        "@types/vscode": "^1.83.0",
         "@types/mocha": "^10.0.2",
         "@types/node": "18.x",
+        "@types/vscode": "^1.74.0",
         "@typescript-eslint/eslint-plugin": "^6.7.3",
         "@typescript-eslint/parser": "^6.7.3",
+        "@vscode/test-electron": "^2.3.4",
         "eslint": "^8.50.0",
         "glob": "^10.3.3",
         "mocha": "^10.2.0",
-        "typescript": "^5.2.2",
-        "@vscode/test-electron": "^2.3.4"
+        "typescript": "^5.2.2"
     }
 }
