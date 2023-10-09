@@ -6,8 +6,9 @@
     "engines": {
         "vscode": "^1.74.0"
     },
-    "publisher": "vscode-samples",
-    "repository": "",
+    "icon": "images/icon.png",
+    "publisher": "noricha",
+    "repository": "https://github.com/noricha-vr/CopyAsCodeBlock",
     "categories": [
         "Other"
     ],
