@@ -1,5 +1,7 @@
 # Copy as Code Block for VSCode
 
+![copy as code block](image/demo.webp "copy as code block")
+
 This VSCode extension allows you to copy selected text in the editor as a code block to the clipboard.
 
 The selected text will be wrapped in a code block with a relative path to the file in the workspace.
